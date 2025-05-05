@@ -20,7 +20,7 @@ Resources:
           COUNT_METRICS: "channels,ts_service_count"
           EXCLUDE_ATTRIBUTES: "tags"
           NEW_RELIC_INGEST_KEY: "<INGEST_KEY>"
-          NEW_RELIC_METRIC_ENDPOINT: "https://metric-api.newrelic.com/metric/v1"
+          NEW_RELIC_METRIC_ENDPOINT: "https://staging-metric-api.newrelic.com/metric/v1"
       Events:
         ApiEvent:
           Type: Api
