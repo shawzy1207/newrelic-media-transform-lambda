@@ -15,11 +15,12 @@ Resources:
       CodeUri: .
       Environment:
         Variables:
-          GAUGE_METRICS: "memory_used,memory_allocation,cpu_used,bitrate,pts_interval,blocking_scene,count,length,gop_size,lra,integrated,peak,level,truespeak,level_3sec,dial_norm,pcr_drift,pcrbitrate,ts_bitrate,null_padding,program_bitrate"
+          GAUGE_METRICS: "memory_used,memory_allocation,cpu_used,bitrate,pts_interval,blocking_scene,count,length,gop_size,lra,integrated,peak,level,truespeak,level_3sec,dial_norm,pcr_drift,pcrbitrate,ts_bitrate,null_padding,program_bitrate,framerate,motion,blocking_frame,brightness,samplerate,truepeak,playback_latency,bandwidth,target_duration,up_time_sec,program_cc"
           SUMMARY_METRICS: "quantizers"
           COUNT_METRICS: "channels,ts_service_count"
           EXCLUDE_ATTRIBUTES: "tags"
           NEW_RELIC_INGEST_KEY: "<INGEST_KEY>"
+          NEW_RELIC_METRIC_ENDPOINT: "https://metric-api.newrelic.com/metric/v1"
       Events:
         ApiEvent:
           Type: Api
